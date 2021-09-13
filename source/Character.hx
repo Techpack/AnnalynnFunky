@@ -393,6 +393,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'Pico Note Right0', 24, false);
 				animation.addByPrefix('singRIGHT', 'Pico NOTE LEFT0', 24, false);
 
+				loadOffsetFile(curCharacter);
+
 				playAnim('idle');
 		}
 
