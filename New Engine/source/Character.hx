@@ -23,6 +23,7 @@ typedef CharacterFile = {
 	var scale:Float;
 	var sing_duration:Float;
 	var healthicon:String;
+	var holdAnim:Bool;
 
 	var position:Array<Float>;
 	var camera_position:Array<Float>;
@@ -58,6 +59,8 @@ class Character extends FlxSprite
 	public var singDuration:Float = 4; //Multiplier of how long a character holds the sing pose
 	public var idleSuffix:String = '';
 	public var danceIdle:Bool = false; //Character use "danceLeft" and "danceRight" instead of "idle"
+
+	public var holdAnim:Bool = true; //Whether or not the character's animations spam during hold notes.
 
 	public var healthIcon:String = 'face';
 	public var animationsArray:Array<AnimArray> = [];
@@ -130,6 +133,11 @@ class Character extends FlxSprite
 
 				positionArray = json.position;
 				cameraPosition = json.camera_position;
+
+				if (json.holdAnim == false)
+				{
+					holdAnim = json.holdAnim;
+				}
 
 				healthIcon = json.healthicon;
 				singDuration = json.sing_duration;

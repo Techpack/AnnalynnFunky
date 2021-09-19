@@ -64,6 +64,7 @@
 	],
 	"healthicon": "anna",
 	"flip_x": false,
+	"holdAnim": false,
 	"healthbar_colors": [
 		71,
 		184,
