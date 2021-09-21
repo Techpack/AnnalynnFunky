@@ -2142,7 +2142,10 @@ class PlayState extends MusicBeatState
 							case 3:
 								animToPlay = 'singRIGHT';
 						}
-						dad.playAnim(animToPlay + altAnim, true);
+						if (!dad.holdAnim && (!daNote.isSustainNote || dad.animation.curAnim.name != animToPlay + altAnim))
+						{
+							dad.playAnim(animToPlay + altAnim, true);
+						}
 					}
 
 					dad.holdTimer = 0;
