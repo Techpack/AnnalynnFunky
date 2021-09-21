@@ -24,12 +24,17 @@ class CreditsState extends MusicBeatState
 	private var iconArray:Array<AttachedSprite> = [];
 
 	private static var creditsStuff:Array<Dynamic> = [ //Name - Icon name - Description - Link - BG Color
-		['Psych Engine Team'],
-		['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',					'https://twitter.com/Shadow_Mario_',	0xFFFFDD33],
-		['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',				'https://twitter.com/river_oaken',		0xFFC30085],
-		[''],
+		['Annalynn Team'],
+		['Cruise Elroy',		'angie',		'Annalynn Creator',					'https://twitter.com/itsCruiseElroy',	0xFFFF0000],
+		['MarioFreak2001',		'angie',		'Director/Main Artist/Charter',					'https://twitter.com/MarioFreak2001',	0xFFF6A1FC],
+		['TECHPACK_64',			'techpack',		'Programmer/Second Musician/Artist/Charter',				'https://twitter.com/Techpack_64',		0xFFFFD700],
+		['DawMii',			'techpack',		'Main Musician',				'https://twitter.com/DawMiiMusic',		0xFF0088FF],
+		['LovelyDonna',			'techpack',		'Logo Art/Concept Artist',				'https://twitter.com/ibrokeyouripad',		0xFFB82100],
+		['Snap',			'techpack',		'Vocals',				'https://twitter.com/snapple_snap',		0xFFFF8800],
+		['Blon',			'techpack',		'Menu Art',				'https://twitter.com/_blon_',		0xFF0088FF],
+		['TheBraveSackBoy',				'sack',			'Charting',							'https://twitter.com/Inky_1980',			0xFF683100],
 		['Special Thanks'],
-		['Keoiki',				'keoiki',			'Note Splash Animations',							'https://twitter.com/Keoiki_',			0xFFFFFFFF],
+		['Maurii',				'keoiki',			'',							'',			0xFFFFFFFF],
 		[''],
 		["Funkin' Crew"],
 		['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",				'https://twitter.com/ninja_muffin99',	0xFFF73838],
