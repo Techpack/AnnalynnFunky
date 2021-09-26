@@ -22,20 +22,12 @@ class GitarooPause extends MusicBeatState
 			FlxG.sound.music.stop();
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('pauseAlt/pauseBG'));
-		if(FlxG.save.data.antialiasing)
-			{
-				bg.antialiasing = true;
-			}
 		add(bg);
 
 		var bf:FlxSprite = new FlxSprite(0, 30);
 		bf.frames = Paths.getSparrowAtlas('pauseAlt/bfLol');
 		bf.animation.addByPrefix('lol', "funnyThing", 13);
 		bf.animation.play('lol');
-		if(FlxG.save.data.antialiasing)
-			{
-				bf.antialiasing = true;
-			}
 		add(bf);
 		bf.screenCenter(X);
 
@@ -44,10 +36,6 @@ class GitarooPause extends MusicBeatState
 		replayButton.animation.addByPrefix('selected', 'bluereplay', 0, false);
 		replayButton.animation.appendByPrefix('selected', 'yellowreplay');
 		replayButton.animation.play('selected');
-		if(FlxG.save.data.antialiasing)
-			{
-				replayButton.antialiasing = true;
-			}
 		add(replayButton);
 
 		cancelButton = new FlxSprite(FlxG.width * 0.58, replayButton.y);
@@ -55,10 +43,6 @@ class GitarooPause extends MusicBeatState
 		cancelButton.animation.addByPrefix('selected', 'bluecancel', 0, false);
 		cancelButton.animation.appendByPrefix('selected', 'cancelyellow');
 		cancelButton.animation.play('selected');
-		if(FlxG.save.data.antialiasing)
-			{
-				cancelButton.antialiasing = true;
-			}
 		add(cancelButton);
 
 		changeThing();
@@ -68,18 +52,24 @@ class GitarooPause extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-		if (controls.LEFT_P || controls.RIGHT_P)
+		if (controls.UI_LEFT_P || controls.UI_RIGHT_P)
 			changeThing();
 
 		if (controls.ACCEPT)
 		{
 			if (replaySelect)
 			{
-				FlxG.switchState(new PlayState());
+				MusicBeatState.switchState(new PlayState());
 			}
 			else
 			{
-				FlxG.switchState(new MainMenuState());
+				PlayState.usedPractice = false;
+				PlayState.changedDifficulty = false;
+				PlayState.seenCutscene = false;
+				PlayState.deathCounter = 0;
+				PlayState.cpuControlled = false;
+				MusicBeatState.switchState(new MainMenuState());
+				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 			}
 		}
 
