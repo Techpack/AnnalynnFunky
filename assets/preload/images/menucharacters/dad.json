@@ -6,6 +6,6 @@
 		0
 	],
 	"scale": 1,
-	"idle_anim": "M Dad Idle",
-	"confirm_anim": "M Dad Idle"
+	"idle_anim": "Dad idle dance BLACK LINE instance",
+	"confirm_anim": "Dad idle dance BLACK LINE instance"
 }
