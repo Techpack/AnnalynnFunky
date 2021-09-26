@@ -130,7 +130,7 @@
 			"fps": 24,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "BF NOTE LEFT0"
+			"name": "BF NOTE LEFT instance"
 		},
 		{
 			"offsets": [
@@ -141,7 +141,7 @@
 			"fps": 24,
 			"anim": "singDOWN",
 			"loop": false,
-			"name": "BF NOTE DOWN0"
+			"name": "BF NOTE DOWN instance"
 		},
 		{
 			"offsets": [
@@ -152,7 +152,7 @@
 			"fps": 24,
 			"anim": "singUP",
 			"loop": false,
-			"name": "BF NOTE UP0"
+			"name": "BF NOTE UP instance"
 		},
 		{
 			"offsets": [
