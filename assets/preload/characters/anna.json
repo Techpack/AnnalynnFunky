@@ -13,14 +13,14 @@
 		},
 		{
 			"offsets": [
-				107,
-				-1
+				-5,
+				-32
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "Pico NOTE LEFT"
+			"name": "Pico Note Right"
 		},
 		{
 			"offsets": [
@@ -35,14 +35,14 @@
 		},
 		{
 			"offsets": [
-				-5,
-				-32
+				107,
+				-1
 			],
 			"indices": [],
 			"fps": 24,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "Pico Note Right"
+			"name": "Pico NOTE LEFT"
 		},
 		{
 			"offsets": [
@@ -71,7 +71,7 @@
 		255
 	],
 	"camera_position": [
-		0,
+		150,
 		0
 	],
 	"sing_duration": 4,

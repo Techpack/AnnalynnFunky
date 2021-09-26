@@ -163,7 +163,7 @@
 			"fps": 24,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "BF NOTE RIGHT0"
+			"name": "BF NOTE RIGHT instance"
 		}
 	],
 	"no_antialiasing": false,
