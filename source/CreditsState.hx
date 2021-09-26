@@ -33,6 +33,7 @@ class CreditsState extends MusicBeatState
 		['Snap',			'snap',		'Vocals',				'https://twitter.com/snapple_snap',		0xFFFF8800],
 		['Blon',			'shadowmario',		'Menu Art',				'https://twitter.com/_blon_',		0xFF0088FF],
 		['TheBraveSackBoy',				'sack',			'Charting',							'https://twitter.com/Inky_1980',			0xFF683100],
+		['Weeg',				'weeg',					'Assistant Programming',		'https://twitter.com/ItIsIWeeg',	0xFF7FBFFF],
 		['Special Thanks'],
 		['Maurii',				'shadowmario',			'',							'',			0xFFFFFFFF],
 		[''],
