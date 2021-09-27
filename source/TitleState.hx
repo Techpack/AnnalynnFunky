@@ -430,13 +430,12 @@ class TitleState extends MusicBeatState
 		if(!closedState) {
 			switch (curBeat)
 			{
-				case 1:
-					createCoolText(['Angie'], 45);
-				// credTextShit.visible = true;
+				
 				case 3:
 					addMoreText('Angie', 45);
 					addMoreText('DawMii', 45);
 					addMoreText('Techpack', 45);
+					addMoreText('Snap', 45);
 				// credTextShit.text += '\npresent...';
 				// credTextShit.addText();
 				case 4:
